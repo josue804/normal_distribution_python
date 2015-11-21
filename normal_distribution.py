@@ -119,6 +119,7 @@ canvas.get_tk_widget().grid(row=1, column=3, rowspan=10, sticky = (N,E))
 button = ttk.Button(mainframe, text="New Histogram", command=main).grid(column=1, row=4, sticky=(N,W))
 
 #scale
+ttk.Label(mainframe, text = "Sample Size Scale: ").grid(column = 2, row = 12, sticky = S)
 scale = StringVar()
 number_lists = Scale(mainframe, from_=2, to=2000, orient=HORIZONTAL,length=600,variable = scale)
 number_lists.grid(column = 3, row = 12, sticky= S)
